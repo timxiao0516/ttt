@@ -104,13 +104,13 @@ if (rightEye.score > 0.1) {
 }
 
 // 在肩膀位置繪製物件圖片
-let leftwrist = pose.keypoints[9];
-let rightwrist = pose.keypoints[10];
+let leftWrist = pose.keypoints[9];
+let rightWrist = pose.keypoints[10];
 if (leftwrist.score > 0.1) {
-  image(img, leftwrist.x - 25, leftwrist.y - 25, 50, 50); // 繪製圖片
+  image(img, leftWrist.x - 25, leftWrist.y - 25, 50, 50); // 繪製圖片
 }
 if (rightwrist.score > 0.1) {
-  image(img, rightwrist.x - 25, rightwrist.y - 25, 50, 50); // 繪製圖片
+  image(img, rightWrist.x - 25, rightWrist.y - 25, 50, 50); // 繪製圖片
 }
 
 // 在頭頂上方顯示學號和姓名
