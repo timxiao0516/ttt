@@ -48,7 +48,8 @@ async function setup() {
   await init(); // 初始化檢測器
   
   img = loadImage('upload_f887fd0cb29f9d086fb4d63b754f6d79.gif'); // 加載您的物件圖片
-  
+  stroke(255);
+  strokeWeight(5);
   
 }
 
