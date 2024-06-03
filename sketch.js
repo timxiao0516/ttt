@@ -80,10 +80,10 @@ function draw() {
     let leftwrist = pose.keypoints[j];
     let rightwrist = pose.keypoints[j+2];
     if (leftShoulder.score > 0.1) {
-      image(img, leftwrist.x - 25, leftwrist.y - 25, 50, 50); // 繪製圖片
+      image(img, leftwrist.x - 25, leftwrist.y - 45, 50, 50); // 繪製圖片
     }
     if (rightShoulder.score > 0.1) {
-      image(img, rightwrist.x - 25, rightwrist.y - 25, 50, 50); // 繪製圖片
+      image(img, rightwrist.x - 25, rightwrist.y - 45, 50, 50); // 繪製圖片
     }
 
     // 在頭頂上方顯示學號和姓名
