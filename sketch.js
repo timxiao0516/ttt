@@ -77,8 +77,8 @@ function draw() {
     }
 
     // 在肩膀位置繪製物件圖片
-    let leftwrist = pose.keypoints[9];
-    let rightwrist = pose.keypoints[10];
+    let leftwrist = pose.keypoints[j];
+    let rightwrist = pose.keypoints[j+2];
     if (leftShoulder.score > 0.1) {
       image(img, leftwrist.x - 25, leftwrist.y - 45, 50, 50); // 繪製圖片
     }
