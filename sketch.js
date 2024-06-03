@@ -6,7 +6,7 @@ https://www.tensorflow.org/hub/tutorials/movenet
 */
 
 let video, bodypose, pose, keypoint, detector; // 定義變量
-let poses = [];
+let poses = [];  
 let img; // 用於存放您的物件圖片
 let studentID = "412730987"; // 學號
 let studentName = "蕭詠錠"; // 姓名
@@ -49,8 +49,7 @@ async function setup() {
   
   img = loadImage('upload_f887fd0cb29f9d086fb4d63b754f6d79.gif'); // 加載您的物件圖片
   
-  stroke(255); // 設置筆觸顏色為白色
-  strokeWeight(5); // 設置筆觸寬度為5
+  
 }
 
 // 繪製每一幀
@@ -77,8 +76,8 @@ function draw() {
     }
 
     // 在肩膀位置繪製物件圖片
-    let leftwrist = pose.keypoints[j];
-    let rightwrist = pose.keypoints[j+2];
+    let leftwrist = pose.keypoints[9];
+    let rightwrist = pose.keypoints[10];
     if (leftShoulder.score > 0.1) {
       image(img, leftwrist.x - 25, leftwrist.y - 45, 50, 50); // 繪製圖片
     }
